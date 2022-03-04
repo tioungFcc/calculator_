@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root {
+  height: 100vh;
+}
+
+#root .calculator {
+  background: #111;
+  color: #f1f1f1;
+  padding: 0.1em;
+}
+
+#root .calculator #display {
+  padding: 0.3em 0.4em;
+  text-align: right;
+  font-size: 2rem;
+}
+
+#root .calculator .pads {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (80px)[4];
+      grid-template-columns: repeat(4, 80px);
+  -ms-grid-rows: (60px)[5];
+      grid-template-rows: repeat(5, 60px);
+      grid-template-areas: "add   subtract multiply divide" "seven eight    nine     equals" "four  five     six      equals" "one   two      three    equals" "zero  decimal  clear    equals";
+}
+
+#root .calculator .pads .pad {
+  border-radius: 0;
+  font-size: 1.1rem;
+}
+
+#root .calculator .pads #zero {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: zero;
+}
+
+#root .calculator .pads #one {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+#root .calculator .pads #two {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+#root .calculator .pads #three {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+#root .calculator .pads #four {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+#root .calculator .pads #five {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+#root .calculator .pads #six {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+#root .calculator .pads #seven {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+#root .calculator .pads #eight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+#root .calculator .pads #nine {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+#root .calculator .pads #decimal {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: decimal;
+}
+
+#root .calculator .pads #add {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: add;
+}
+
+#root .calculator .pads #multiply {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: multiply;
+}
+
+#root .calculator .pads #divide {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: divide;
+}
+
+#root .calculator .pads #subtract {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: subtract;
+}
+
+#root .calculator .pads #clear {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: clear;
+}
+
+#root .calculator .pads #equals {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  grid-area: equals;
+}
+/*# sourceMappingURL=style.css.map */
